@@ -1,0 +1,389 @@
+body {
+    background: linear-gradient(to bottom, #ffffff, #dcd3e9); /* Cambia los colores a los que desees */
+}
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 0px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(108, 96, 163);
+}
+
+nav li:hover {
+    background-color:  rgb(248, 211, 241);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(243, 170, 237);
+    padding: 10px;
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: rgb(221, 132, 206);
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+.text-subr {
+    text-decoration: underline;
+}
+#listaoc ol {
+    list-style-type: upper-alpha;
+}
+#listaoc ol ol {
+    list-style-type: upper-roman;
+}
+#listaotc ol {
+    list-style-type: lower-alpha;
+}
+#listaotc ol ol {
+    list-style-type: lower-roman;
+}
+#listaotc ol ol ol {
+    list-style-type: upper-roman;
+}
+#listadtc ul ul {
+    list-style-image: url(../img/estrellita.gif);
+    
+}
+#listadtc ul ul ul{
+    list-style-image: none;
+    list-style-type: square;
+}
+dt {
+    background-color: rgb(3, 3, 39);
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+dd {
+    padding: 10px 0;
+}
+.imagen1 {
+    border-radius: 110px
+  }
+  
+.estrellas {
+    font-size: 40px;
+    box-sizing: border-box;
+    color: rgb(238, 227, 125);
+    
+}
+#listadtc ul ul ul{
+    list-style-image: none;
+    list-style-type: square;
+}
+dt {
+    background-color: rgb(28, 28, 204);
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+dd {
+    padding: 10px 0;
+}
+table.tcenter {
+    width: 60%;
+    margin: 0 auto;
+}
+table.tcenter th{
+    background-color: rgb(2, 2, 63);
+    color: white;
+    font-size: 22px;
+}
+table.tcenter td{
+    padding: 6px;
+    font-size: 18px;
+}
+table.tstriped tr:nth-child(odd){
+    background-color: rgb(177, 145, 202);  
+}
+table.tstriped tr:nth-child(even){
+    background-color: rgb(207, 220, 248);  
+}
+table.tborder, table.tborder td {
+    border: solid 1px gray;
+}
+
+table.horario {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+table.horario td {
+    color: black;
+}
+table.horario th {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+table.horario th.grupo {
+    font-size: 26px;
+    font-style: italic;
+}
+.fol {
+    background-color: #f0f0c8;
+}
+.ende {
+    background-color: #b4b36e;
+}
+.lm {
+    background-color: #f7cac9;
+}
+.prog {
+    background-color: #b37b7a;
+}
+.sisi {
+    background-color: #a5da9c;
+}
+.ing {
+    background-color: #77b3eb;
+}
+.bd {
+    background-color: #d2d2fb;
+}
+.fol {
+    background-color: #8081bb;
+}
+.letra2 {
+    font-size: 40px;
+    box-sizing: border-box;
+    color: #b37b7a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-login {
+    margin-bottom: 40px;
+}
+.form-login h3 {
+    color: #333;
+}
+.form-login fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-registro {
+    margin-bottom: 40px;
+}
+.form-registro h3 {
+    color: #333;
+}
+.form-registro fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-html5 {
+    margin-bottom: 40px;
+}
+.form-html5 legend {
+    color: #333;
+    font-weight: bold;
+}
+.form-html5 fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-login .btn,
+.form-registro .btn,
+.form-html5 .btn {
+    padding: 10px 20px;
+    background-color: #af4ca2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-login .btn-blue {
+    background-color: #d476e7;
+}
+.form-registro .btn-blue {
+    background-color: #d476e7;
+}
+.form-html5 .btn-red {
+    background-color: #d476e7;
+}
